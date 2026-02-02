@@ -63,24 +63,12 @@ def visualise_on_image(idx_start, idx_end):
         x = current_index % largeur 
         if i < idx_start :
             pix[x,y] = (255,0,0)
-            if x+1 < largeur :
-                pix[x+1,y] = (255,0,0)
-            if x-1 > 0:    
-                pix[x-1,y] = (255,0,0)
 
         elif i < idx_start + 32 :
-            pix[x,y] = (255,0,255)
-            if x+1 < largeur :
-                pix[x+1,y] = (0,0,255)
-            if x-1 > 0:    
-                pix[x-1,y] = (0,0,255)
+            pix[x,y] = (0,0,255)
 
         else :
             pix[x,y] = (0,255,0)
-            if x+1 < largeur :
-                pix[x+1,y] = (0,255,0)
-            if x-1 > 0:
-                pix[x-1,y] = (0,255,0)
 
 def extraire_texte(key_start) :
     idx_start = find_start_position(key_start) 
@@ -123,3 +111,4 @@ with open("Output.txt", "w") as text_file:
 
 image.save("image_decodee.png")
 print("Image decodée sauvegardée avec succès !")    
+
