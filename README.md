@@ -1,4 +1,4 @@
-# G-Selector Stega : Encodage RGB Adaptatif
+# ParityStego-Python : Encodage RGB Adaptatif
 
 Ce projet implémente une méthode de stéganographie avancée en Python, combinant compression, chiffrement XOR et une logique de sélection de canal dynamique basée sur la parité. Des LLM ont pu être utilisés dans ce projet pour débugger ou expliquer des librairies. Cependant, le code a été écrit entièrement à la main par moi même.
 
